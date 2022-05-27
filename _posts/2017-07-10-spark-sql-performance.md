@@ -2,6 +2,7 @@
 title: Spark 程序优化一例
 date: 2017-07-10 09:40:00 +0800
 categories: [BigData, Spark]
+tags: [performance]
 ---
 
 Spark SQL 很🔥，官方宣称开发效率大幅提高，并且程序逻辑更容易理解，然而实际使用起来却也有运行效率低下，优化手段匮乏等缺点。传统数据库采用SQL，提高查询速度很大程度上依赖于索引手段进行SQL优化，而Spark SQL中的表无法使用索引技术。
