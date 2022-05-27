@@ -27,7 +27,7 @@ public EventImpl(byte[] s, long timestamp, Priority pri, long nanoTime, String h
 重写，解析方法参数 `byte[] s` 的内容取出时间，赋值给 timestamp，这样在 Flume sink 配置文件中 timestamp 才可以作为一个字段被识别和处理，由此解决根据日志生成时间存储等相关问题。
 
 > flume的框架会构造 `byte[] s 长度为 0` 的数组，用来发送类似简单验证的 event，所以在抽取日志生成时间时需要注意 s 长度为 0 的问题。
-{: .prompt-info }
+{: .prompt-tip }
 
 ## HDFS Sink 配置实例
 

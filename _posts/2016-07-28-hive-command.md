@@ -78,7 +78,9 @@ alter table tb_test set TBLPROPERTIES('comment'='每天各线路找货会员表'
 
 ## 加载数据
 ```sql
--- 加载本地文件数据, 覆盖模式，声明格式与实际格式不同的数据加载后无法正确读取，例如数据格式为text格式，表格式为sequencefile,rcfile,avrofile等，目前sqoop导入到hive只支持textfile格式，导入到hdfs支持textfile,sequencefile,avrofile三种格式*
+-- 加载本地文件数据, 覆盖模式，声明格式与实际格式不同的数据加载后无法正确读取，例如数据格式为text格式，
+-- 表格式为sequencefile,rcfile,avrofile等，目前sqoop导入到hive只支持textfile格式，
+-- 导入到hdfs支持textfile,sequencefile,avrofile三种格式*
 load data local inpath '/home/yundao/test_data.txt' overwrite into table test;
 
 -- 加载本地文件数据, 追加模式
@@ -224,7 +226,8 @@ str_to_map(text, delimiter1, delimiter2) - Creates a map by parsing text
 select str_to_map('key1:val1,key2:val2', ',', ':') from dual;
 	
 -- translate - 转换字符
-translate('abcdef', 'adc', '19') returns '1b9ef' replacing 'a' with '1', 'd' with '9' and removing 'c' from the input string
+translate('abcdef', 'adc', '19') 
+  returns '1b9ef' replacing 'a' with '1', 'd' with '9' and removing 'c' from the input string
 select translate('abcdef', 'adc', '19') from dual;
 ```
 
@@ -377,5 +380,5 @@ select dboutput(
 from increment.report_lujing_app_dau;
 ```
 
-> GenericUDFDBOutput是hive自带函数,能在shell里直接使用，但是hue里不会加载这个jar,需要添加到AUX_JARS_PATH=[jar]或者在HIVE_HOME目录下新增一个auxlib目录，将该jar放到这个目录下,重启hive服务后，才能正常使用; 网上的在hue里配置修改辅助jar路径存在让shell不能正常工作的问题
+> GenericUDFDBOutput是hive自带函数,能在shell里直接使用，但是hue里不会加载这个jar,需要添加到AUX_JARS_PATH=[jar]或者在HIVE_HOME目录下新增一个auxlib目录，将该jar放到这个目录下,重启hive服务后，才能正常使用; 网上的在hue里配置修改辅助jar路径，可能导致让shell中Hive相关命令不能正常工作。
 {: .prompt-info }

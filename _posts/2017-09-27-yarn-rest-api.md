@@ -9,14 +9,17 @@ tags: [security]
 
 幸好Yarn提供了基于HTTP Api的方式访问，下面开始搞起...
 
-1. 根据官网文档要求编写json格式内容存储到json文件，这里名为 ```yarn-rest-request.json```
+1. 根据官网文档要求编写json格式内容存储到json文件，这里名为 `yarn-rest-request.json`{: .filepath}
 2. 将该文件保存到跳板机
 ```bash
 scp yarn-rest-request.json admin@[server_host]:~/
 ```
 3. 在跳板机上执行如下命令，这里的域名及端口修改为实际域名和端口
 ```bash
-curl -L -H'Content-Type: application/json' -XPOST --data-binary @yarn-rest-request.json http://big-elephant-3:8088/ws/v1/cluster/apps
+curl -L -H'Content-Type: application/json' \
+  -XPOST \
+  --data-binary @yarn-rest-request.json \
+  http://big-elephant-3:8088/ws/v1/cluster/apps
 ```
 4. 然后就可以看到服务器返回的信息了，如有必要可以将返回结果保存到文件便于后续使用。
 5. 如果跳板机无法保存文件执行命令等操作，使用iTerm2软件配置好隧道穿透即可上传yarn-rest-request.json文件到生产服务器，后面按照第3步开始执行即可

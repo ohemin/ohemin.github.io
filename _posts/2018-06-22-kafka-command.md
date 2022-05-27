@@ -14,13 +14,12 @@ Kafka 迭代很快，新版本又有不少变化，同事告诉我升级好了�
 服务器名称 ```mt-zookeeper-vip:2181```
 
 ``` bash
-cat /etc/hosts
-
 10.77.32.90 mt-zookeeper-4
 10.77.32.91 mt-zookeeper-5
 10.77.32.92 mt-zookeeper-6
 10.77.32.2 mt-zookeeper-vip
 ```
+{: file="/etc/hosts"}
 
 ### broker-server
 
@@ -31,7 +30,7 @@ cat /etc/hosts
 ## 生产环境
 
 ### zookeeper
-服务器名称 ```mt-zookeeper-vip:2181```
+服务器名称 `mt-zookeeper-vip:2181`
 
 ### broker-server
 
@@ -46,36 +45,57 @@ PLAINTEXT://10.33.36.101:9092,PLAINTEXT://10.33.36.113:9092,PLAINTEXT://10.33.40
 cd kafka/
 
 # 显示 topic 列表
-bin/kafka-topics.sh --list --zookeeper mt-zookeeper-vip:2181
+bin/kafka-topics.sh --list \
+  --zookeeper mt-zookeeper-vip:2181
 
 # 创建一个 topic
-bin/kafka-topics.sh --create --zookeeper mt-zookeeper-vip:2181--replication-factor 3 --partitions 1 --topic __connect-offsets
+bin/kafka-topics.sh --create \
+  --zookeeper mt-zookeeper-vip:2181 \
+  --replication-factor 3 \
+  --partitions 1 \
+  --topic __connect-offsets
 
 # 删除一个 topic
-bin/kafka-topics.sh --delete --zookeeper mt-zookeeper-vip:2181 --topic __connect-offsets
+bin/kafka-topics.sh --delete \
+  --zookeeper mt-zookeeper-vip:2181 \
+  --topic __connect-offsets
 
-# 消费 kafka 消息，如果加上 --from-beginning 参数则从最早消息开始消费，否则由kafka记录上次位置后开始
-bin/kafka-console-consumer.sh --zookeeper mt-zookeeper-vip:2181 --topic bigDatamarket [--from-beginning]
+# 消费 kafka 消息，如果加上 --from-beginning 参数则从最早消息开始消费，
+# 否则由kafka记录上次位置后开始
+bin/kafka-console-consumer.sh \
+  --zookeeper mt-zookeeper-vip:2181 \
+  --topic bigDatamarket 
+  [--from-beginning]
 
 # 以交互方式发送一条 kafka 消息
-bin/kafka-console-producer.sh --broker-list [broker-server] --topic YmBillBill
+bin/kafka-console-producer.sh \
+  --broker-list [broker server] \
+  --topic [topic name]
 
 # 查看某 topic 当前 offset 值
-bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list [broker-server] --topic lbs_test
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell \
+  --broker-list [broker server] \
+  --topic lbs_test
 ```
 
 ## 设置offset
 
 
-```bash
-cat consumer.properties
-> zookeeper.connect=mt-zookeeper-vip:2181
-> group.id=dmp_stream
+```properties
+# ...
+zookeeper.connect=mt-zookeeper-vip:2181
+group.id=dmp_stream
+# ...
 ```
+{: file="consumer.properties"}
 
 ### 命令行执行如下
 ```bash
-bin/kafka-run-class.sh kafka.tools.UpdateOffsetsInZK latest consumer.properties dmp_task_result
+bin/kafka-run-class.sh \
+  kafka.tools.UpdateOffsetsInZK \
+  latest \
+  consumer.properties \
+  dmp_task_result
 ```
 
 ### apache canal 推送的mysql记录更新消息结构
