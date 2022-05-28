@@ -1,7 +1,7 @@
 ---
 title: HBase 命令实战
 date: 2017-07-10 09:40:00 +0800
-categories: [BigData, HBase]
+categories: [Big data, HBase]
 tags: [command]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Apache Sqoop 命令实战
 date: 2016-08-13 11:29:00 +0800
-categories: [BigData, Sqoop]
+categories: [Big data, Sqoop]
 tags: [command]
 ---
 

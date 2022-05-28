@@ -1,7 +1,7 @@
 ---
 title: YARN 生产集群办公环境无法访问
 date: 2017-08-30 19:40:00 +0800
-categories: [BigData, Yarn]
+categories: [Big data, Yarn]
 tags: [security]
 ---
 

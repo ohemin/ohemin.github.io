@@ -1,7 +1,7 @@
 ---
 title: Spark 程序优化一例
 date: 2017-07-10 09:40:00 +0800
-categories: [BigData, Spark]
+categories: [Big data, Spark]
 tags: [performance]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Hive 命令实战
 date: 2016-07-28 11:29:00 +0800
-categories: [BigData, Hive]
+categories: [Big data, Hive]
 tags: [command]
 ---
 

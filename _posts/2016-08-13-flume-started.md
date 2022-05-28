@@ -1,7 +1,7 @@
 ---
 title: Apache Flume
 date: 2016-08-13 01:29:00 +0800
-categories: [BigData, Flume]
+categories: [Big data, Flume]
 ---
 
 Flume 是大数据 Hadoop 生态的日志集成组件，通过它可以将其它服务器上的日志文件集成到 Hadoop HDFS、HIVE、ES等，Flume 是pull架构主要分为三层，source、 channels、sink

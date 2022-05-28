@@ -1,7 +1,7 @@
 ---
 title: Kafka 命令实战2
 date: 2018-06-22 01:29:00 +0800
-categories: [BigData, Kafka]
+categories: [Big data, Kafka]
 tags: [command]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: YARN Web UI 不能查看
 date: 2017-08-30 19:40:00 +0800
-categories: [BigData, Yarn]
+categories: [Big data, Yarn]
 ---
 
 访问YARN Web UI地址时，页面出现如下提示：

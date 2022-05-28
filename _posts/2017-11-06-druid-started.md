@@ -1,7 +1,7 @@
 ---
 title: Apache DRUID 部署及使用
 date: 2017-11-06 20:55:00 +0800
-categories: [BigData, DRUID]
+categories: [Big data, Druid]
 toc: true
 ---
 ## 初始设置

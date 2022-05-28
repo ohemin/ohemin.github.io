@@ -1,7 +1,7 @@
 ---
 title: Hive 任务调优
 date: 2015-10-23 13:40:00 +0800
-categories: [BigData, Hive]
+categories: [Big data, Hive]
 tags: [performance]
 ---
 

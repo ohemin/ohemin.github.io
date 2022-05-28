@@ -1,7 +1,7 @@
 ---
 title: ElasticSearch 命令实战
 date: 2016-08-13 01:29:00 +0800
-categories: [BigData, ElasticSearch]
+categories: [Big data, ElasticSearch]
 tags: [command]
 ---
 
