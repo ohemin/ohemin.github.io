@@ -1,7 +1,7 @@
 ---
 title: 解决文件已被macOS使用无法打开
 date: 2018-10-11 13:40:00 +0800
-categories: [mac, tip]
+categories: [Mac, tip]
 ---
 
 

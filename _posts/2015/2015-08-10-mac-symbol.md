@@ -1,5 +1,5 @@
 ---
-title: mac 系统特殊符号输入
+title: mac系统特殊符号输入
 date: 2015-08-10 20:55:00 +0800
 categories: [Mac, tip]
 ---
