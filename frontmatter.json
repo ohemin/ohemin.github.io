@@ -1,5 +1,19 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.framework.id": "jekyll",
-  "frontMatter.content.publicFolder": "assets"
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.content.snippets": {
+    "header": {
+      "description": "",
+      "body": [
+        "---",
+        "title: 使用mac自带apache服务 ",
+        "date: $now 09:22:00 +0800",
+        "categories: [Mac, software]",
+        "tags: [develop, environment]",
+        "---"
+      ],
+      "fields": []
+    }
+  }
 }

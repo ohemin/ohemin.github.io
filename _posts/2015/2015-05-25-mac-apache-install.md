@@ -9,36 +9,46 @@ mac 系统通常默认自带有Apache http服务，我们要做的就是把它�
 
 ## 管理apache服务
 
-### 启动服务
 ```bash
+# 启动服务
 sudo apachectl start
-```
 
-### 停止服务
-```bash
+# 停止服务
 sudo apachectl stop
-```
 
-### 重启服务
-```bash
+# 重启服务
 sudo apachectl restart
 ```
 
-## 管理apache自启动
+## 管理mac启动服务
 
-### 希望每次系统开始后，apache服务就启动好了
 ```bash
+# apache服务随系统启动
 launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-```
 
-### 验证下是不是设置上了
-```bash
+# 验证下是不是设置上了
 launchctl list | grep httpd
-```
 
-### 又后悔了，不想让服务自动启动
-```bash
+# 后悔了，不想让服务自动启动
 launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+# 查看所有的启动服务
+launchctl list
+
+# 禁用一个启动服务
+launchctl disable /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+# 启用一个启动服务
+launchctl enable /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+# 杀死启动服务，用于解决一些停止响应的服务
+launchctl disable /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+# 直接启动
+launchctl start /System/Library/LaunchDaemons/org.apache.httpd.plist
+
+# 直接停止
+launchctl stop /System/Library/LaunchDaemons/org.apache.httpd.plist
 ```
 
 ## 编辑apache配置
