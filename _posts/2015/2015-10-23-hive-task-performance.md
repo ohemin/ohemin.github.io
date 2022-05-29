@@ -1,5 +1,5 @@
 ---
-title: Hive 任务调优
+title: Hive 任务调优参数
 date: 2015-10-23 13:40:00 +0800
 categories: [Big data, Hive]
 tags: [performance]
