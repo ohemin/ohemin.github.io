@@ -1,7 +1,7 @@
 ---
 title: mac中安装MySQL数据库
 date: 2015-05-26 19:22:00 +0800
-categories: [Mac, MySQL]
+categories: [Database, MySQL]
 tags: [develop, environment]
 ---
 

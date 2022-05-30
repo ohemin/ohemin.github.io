@@ -1,7 +1,7 @@
 ---
 title: MySQL数据备份命令mysqldump 
 date: 2015-06-11 14:48:00 +0800
-categories: [DB, MySQL]
+categories: [Database, MySQL]
 tags: [command]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: SQL Joins
 date: 2015-09-17 21:09:00 +0800
-categories: [Big data, DB]
+categories: [Database, SQL Language]
 tags: [develop, image]
 ---
 
