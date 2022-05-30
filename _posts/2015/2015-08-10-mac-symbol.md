@@ -1,7 +1,7 @@
 ---
 title: mac系统特殊符号输入
 date: 2015-08-10 20:55:00 +0800
-categories: [Mac| tip]
+categories: [Mac, tip]
 ---
 
 OS X下的特殊字符输入有很多快捷键 | 并且不用依赖第三方输入法 | 直接可用非常方便

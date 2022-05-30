@@ -1,7 +1,7 @@
 ---
 title: 使用mac自带apache服务 
 date: 2015-05-25 09:22:00 +0800
-categories: [Mac, software]
+categories: [Mac, apache]
 tags: [develop, environment]
 ---
 

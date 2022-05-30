@@ -1,7 +1,7 @@
 ---
 title: ERP Web2 BigData
 date: 2015-09-17 21:09:00 +0800
-categories: [Big data, software]
+categories: [Big data]
 tags: [develop, image]
 ---
 

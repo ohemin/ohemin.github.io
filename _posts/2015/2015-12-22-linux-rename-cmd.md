@@ -1,10 +1,11 @@
 ---
-title: Linux文件批量改名
+title: The rename command
 date: 2015-12-22 17:23:00 +0800
-categories: [Linux, command]
+categories: [Linux]
+tags: [command]
 ---
 
-Linux 中 rename 命令可以对目录中的文件批量改名，Sqoop会把已经完成传输的文件改名加上.COMPLETED后缀来区分是否需要处理，当我们做BUG复现调试时，需要再次传输这批文件，这时可以用文件改名去掉.COMPLETED后缀的方式实现，然而一个一个文件改名效率显然太低，rename命令可以支持批量改名
+Linux 中 rename 命令可以对目录或文件进行改名，Sqoop会把已经完成传输的文件改名加上.COMPLETED后缀来区分是否需要处理，当我们做BUG复现调试时，需要再次传输这批文件，这时可以用文件改名去掉.COMPLETED后缀的方式实现，然而一个一个文件改名效率显然太低，rename命令可以支持批量改名
 
 将所有子目录中符合*_2015-12-22_*.log.COMPLETED名称的文件名中的.log.COMPLETED改为.log
 

@@ -1,7 +1,8 @@
 ---
 title: linux命令行模式常用快捷键
 date: 2015-12-17 10:43:00 +0800
-categories: [Linux, command]
+categories: [Linux]
+tags: [command]
 ---
 
 linux命令行模式常用快捷键

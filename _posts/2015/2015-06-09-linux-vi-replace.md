@@ -1,8 +1,7 @@
 ---
 title: vi vim的的文本替换命令
 date: 2015-06-09 13:22:00 +0800
-categories: [Linux, software]
-tags: [vi/vim]
+categories: [Linux, vi/vim]
 ---
 
 vi/vim 是Linux下文件编辑软件，其中文本替换功能经常用到，如果熟悉常用替换命令，工作效率大幅提升
