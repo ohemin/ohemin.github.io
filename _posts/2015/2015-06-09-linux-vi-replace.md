@@ -1,5 +1,5 @@
 ---
-title: vi vim的的文本替换命令
+title: vi vim中的文本替换
 date: 2015-06-09 13:22:00 +0800
 categories: [Linux, vi/vim]
 ---
@@ -33,3 +33,5 @@ vi/vim 是Linux下文件编辑软件，其中文本替换功能经常用到，�
 #（使用+ 来 替换 / ）： /oradata/apras/替换成/user01/
 ：%s+/oradata/apras/+/user01/apras1+apras1/
 ```
+> 本篇中的替换语法同样适用于sed命令工具
+{: .prompt-tip}
