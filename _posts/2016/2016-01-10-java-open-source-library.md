@@ -1,5 +1,4 @@
 ---
-title: Java open source library 
 date: 2016-01-10 11:58:00 +0800
 categories: [Java, Library]
 tags: [updating]
@@ -32,3 +31,6 @@ org.hamcrest        |hamcrest-*|用于测试的匹配器框架
 org.objenesis   |objenesis     |不使用构造方法创建Java对象
 stax |stax | 解析XML
 xalan|xalan| XSLT转换器
+
+> 未完待续...
+{: .prompt-info}
